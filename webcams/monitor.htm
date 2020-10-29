@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>World Webcams Wall</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        @font-face {
+            font-family: "CustomClockFont";
+            src: url('static/font/digital.ttf');
+            src: url('static/font/digital.ttf') format('truetype');
+        }
+        body {background: #000}
+    </style>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="../config/webcams.js"></script>
+    <script type="text/javascript" src="./monitor.js"></script>
+    <style>
+        #cache{ display: none; }
+        .monitor-box {        
+            border: 1px solid #F00;
+            display: inline-block;
+            padding: 5px;
+            float: left;
+        }
+        .monitor-box img {
+            width: 400px;
+            height: 300px;
+        }
+        div {
+            color: #FFF;
+            font-family: arial;
+            font-weight: bold;
+        }
+        #nowtime {
+            position: fixed;
+            right: 3%;
+            top: 3%;
+            z-index: 10000;
+            background: #FFCC00;
+            padding: 1em;
+            opacity: 0.4;
+        }
+        #nowtime div,span{
+            color: #000000;
+        }
+        .clock {
+            font-family: "CustomClockFont";
+        }
+            
+        #nowtime .time-large{
+            font-size: 4em;
+        }
+        #nowtime .time-medium{
+            font-size: 3em;
+        }
+        #nowtime .time-small{
+            font-size: 2em;
+        }
+        #nowtime .date{
+            text-align: right;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="nowtime">
+        <div class="date time-small clock">
+            <span class="year"></span>-<span class="month"></span>-<span class="day"></span>
+        </div>
+        <div class="time">
+            <span class="time-large"><span class="clock hour"></span>:<span class="clock minute"></span></span><span class="time-medium">:<span class="clock second"></span></span>
+        </div>
+        <div class="date time-small clock">
+            UTC<span class="clock tzsign"></span><span class="clock tzhour"></span>:<span class="clock tzminute"></span>
+        </div>
+    </div>
+    <div id="monitors"></div>
+    <div id="cache"></div>
+  </body>
+</html>
