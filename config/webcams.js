@@ -2,13 +2,13 @@ var imageWidth = 400, imageHeight = 300;
 var refreshInterval = 15000;
 var monitors = [
 //////////////////////////////////////////////////////////////////////////////
-{
+/*{
     "title": "Elbe River",
     "city": "Dresden",
     "country": "de",
     "url": "http://web.dlz-it.de/ftp/wsa-dd/dresden.jpg",
     "life": 60,
-},
+},*/
 
 {
     "title": "Frauenkirche #1",
@@ -18,7 +18,7 @@ var monitors = [
     "life": 60,
 },
 
-{
+/*{
     "title": "Frauenkirche #2",
     "city": "Dresden",
     "country": "de",
@@ -32,7 +32,7 @@ var monitors = [
     "country": "de",
     "url": "http://www.frauenkirche.de/webcams/img.php?32&",
     "life": 60,
-},
+},*/
 
 {
     "title": "Zwinger Palace",
@@ -42,7 +42,7 @@ var monitors = [
     "life": 60,
 },
 
-{
+/*{
     "title": "Old Faithful #1",
     "city": "Yellowstone",
     "country": "us",
@@ -50,7 +50,7 @@ var monitors = [
     "life": 60,
 },
 
-/*{
+{
     "title": "Oregon State University",
     "city": "Corvallis",
     "country": "us",
@@ -67,7 +67,7 @@ var monitors = [
     "title": "Aurora Forecast",
     "city": "N/A",
     "country": "N/A",
-    "url": "http://services.swpc.noaa.gov/images/animations/ovation-north/latest.png",
+    "url": "https://services.swpc.noaa.gov/images/animations/ovation/north/latest.jpg",
     "life": 600,
 },
 
@@ -77,7 +77,7 @@ var monitors = [
     "life": 1800,
 },
 
-{
+/*{
     "title": "FMI - Kevo",
     "city": "Kevo",
     "country": "fi",
@@ -89,6 +89,12 @@ var monitors = [
     "title": "FMI - Hankasalmi",
     "url": "http://aurora.fmi.fi/public_service/latest_SIR_AllSky.jpg",
     "life": 300,
+},*/
+
+{
+    "title": "Himawari-8 East China",
+    "url": "http://rammb.cira.colostate.edu/ramsdis/online/images/latest/himawari-8/himawari-8_band_13_sector_05.gif",
+    "life": 900,
 },
 
 {
@@ -118,6 +124,12 @@ var monitors = [
 },
 
 {
+    "title": "Weather Hessen",
+    "url": "http://www.dwd.de/DWD/wetter/aktuell/deutschland/bilder/wx_hes_akt.jpg",
+    "life": 900,
+},
+
+{
     "title": "Himawari-8",
     "url": "http://lab.neoatlantis.org/h8color-taiwan.jpg",
     "life": 600,
@@ -142,6 +154,18 @@ var monitors = [
 },
 
 {
+    "title": "Offenbach West DWD Camera",
+    "url": "https://opendata.dwd.de/weather/webcam/Offenbach-W/Offenbach-W_latest_640.jpg",
+    "life": 600,
+},
+
+{
+    "title": "Volcano - Popocatepetel",
+    "url": "http://www.cenapred.unam.mx/images/popo1.jpg",
+    "life": 120,
+},
+
+/*{
     "title": "Switzerland Weather",
     "url": "http://lab.neoatlantis.org/swiss-weather.jpg",
     "life": 900,
@@ -163,7 +187,7 @@ var monitors = [
     "title": "Currency EUR-CNY(via OER) -12h",
     "url": "http://lab.neoatlantis.org/eur_12h.png",
     "life": 1200,
-}
+}*/
 
 //////////////////////////////////////////////////////////////////////////////
 ];
