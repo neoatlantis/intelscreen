@@ -87,7 +87,7 @@ var monitors = [
 {
     "title": "KMA East Asia Analysis",
     "url": "http://web.kma.go.kr/repositary/image/cht/img/sfc3_{UTCyyyy}{UTCmm}{UTCdd}{UTCHH/6}.png",
-    "life": 3600,
+    "life": 600,
 },
 
 {
