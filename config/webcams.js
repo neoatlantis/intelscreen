@@ -57,15 +57,15 @@ var monitors = [
     "url": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_512_HMII.jpg",
     "life": 120,
 },
-    /*{
-    "title": "FMI - Kevo",
-    "city": "Kevo",
-    "country": "fi",
-    "url": "http://aurora.fmi.fi/public_service/latest_KEV.jpg",
-    "life": 300,
-},
 
 {
+    "title": "Europe Lightning",
+    "url": "https://www.blitzortung.org/en/History/{yyyy}/{mm}/{dd}/{UTCHH}/{MM/10}/image_b_eu.png",
+    "css": "background-image: url('https://www.blitzortung.org/en/History/Backgrounds/image_b_eu.png'); background-size: 100%;",
+    "life": 600,
+},
+
+/*{
     "title": "FMI - Hankasalmi",
     "url": "http://aurora.fmi.fi/public_service/latest_SIR_AllSky.jpg",
     "life": 300,

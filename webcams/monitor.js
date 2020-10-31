@@ -13,6 +13,50 @@ var touseSlot = 0;
  * display, only when its cache life expired.
  */
 
+function resolveUrl(url){
+    const now = newDate();
+
+    var day = now.getDate(),
+        month = now.getMonth() + 1,
+        year = now.getFullYear();
+    var hour = now.getHours(),
+        minute = now.getMinutes(),
+        second = now.getSeconds();
+    var utcday = now.getUTCDate(),
+        utcmonth = now.getUTCMonth() + 1,
+        utcyear = now.getUTCFullYear(),
+        utchour = now.getUTCHours(),
+        utcminute = now.getUTCMinutes(),
+        utcsecond = now.getUTCSeconds();
+
+    var timezoneOffset = -1 * now.getTimezoneOffset(),
+        timezoneSign = (timezoneOffset >= 0 ? '+': '-'),
+        timezoneHour = Math.floor(timezoneOffset / 60),
+        timezoneMinute = timezoneOffset - 60 * timezoneHour;
+
+    console.log(url);
+    url = url
+        .replace("{yyyy}", year) 
+        .replace("{mm}", rjust2(month))
+        .replace("{dd}", rjust2(day))
+        .replace("{HH}", rjust2(hour))
+        .replace("{MM}", rjust2(minute))
+        .replace("{SS}", rjust2(second))
+        .replace("{MM/10}", rjust2(Math.floor(minute/10) * 10))
+
+        .replace("{UTCyyyy}", utcyear) 
+        .replace("{UTCmm}", rjust2(utcmonth))
+        .replace("{UTCdd}", rjust2(utcday))
+        .replace("{UTCHH}", rjust2(utchour))
+        .replace("{UTCMM}", rjust2(utcminute))
+        .replace("{UTCSS}", rjust2(utcsecond))
+        .replace("{UTCMM/10}", rjust2(Math.floor(utcminute/10) * 10))
+    ;
+    console.log(url);
+
+    return url;
+}
+
 function cacheGenerate(){
     var imagebox, life, now = (newDate().getTime());
     for(var id=0; id<monitors.length; id++){
@@ -27,6 +71,7 @@ function cacheGenerate(){
 
         $('<img>')
             .addClass('cached')
+            .attr("style", monitors[id].css || "")
             .css({
                 'height': imageHeight + ' px',
                 'width': imageWidth + ' px',
@@ -65,7 +110,7 @@ function cacheRefresh(){
                 .show()
                 .parent()
             .find('.cached')
-                .attr('src', ($(this).data('url') + '?' + now))
+                .attr('src', resolveUrl($(this).data('url') + '?_' + now))
                 .hide()
         ;
     });
@@ -116,6 +161,11 @@ function setMonitor(){
     touseSlot++;
 }
 
+function rjust2(i){
+    i = i.toString();
+    return '00'.slice(0, 2-i.length) + i;
+}
+
 function setNowtimeSlow(){
     var now = newDate();
     var day = now.getDate(),
@@ -128,10 +178,6 @@ function setNowtimeSlow(){
         timezoneSign = (timezoneOffset >= 0 ? '+': '-'),
         timezoneHour = Math.floor(timezoneOffset / 60),
         timezoneMinute = timezoneOffset - 60 * timezoneHour;
-    function rjust2(i){
-        i = i.toString();
-        return '00'.slice(0, 2-i.length) + i;
-    }
     $('.year').text(year);
     $('.month').text(rjust2(month));
     $('.day').text(rjust2(day));
