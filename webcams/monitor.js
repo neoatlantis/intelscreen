@@ -1,3 +1,7 @@
+import { newDate } from "./monitor.time.js";
+
+
+
 var slotsCount = 6;
 var monitorsCount = monitors.length;
 var touseSlot = 0;
@@ -10,7 +14,7 @@ var touseSlot = 0;
  */
 
 function cacheGenerate(){
-    var imagebox, life, now = (new Date().getTime());
+    var imagebox, life, now = (newDate().getTime());
     for(var id=0; id<monitors.length; id++){
         imagebox = $('<span>', { id: 'cacheimage-' + id })
             .addClass('cacheimage')
@@ -52,7 +56,7 @@ function cacheGenerate(){
 
 function cacheRefresh(){
     /* manage cached image, and review if any of them shall be reloaded */
-    var now = new Date().getTime();
+    var now = newDate().getTime();
     $('.cacheimage').each(function(){
         if($(this).data('nextupdate') >= now) return;
         $(this)
@@ -113,7 +117,7 @@ function setMonitor(){
 }
 
 function setNowtimeSlow(){
-    var now = new Date();
+    var now = newDate();
     var day = now.getDate(),
         month = now.getMonth() + 1,
         year = now.getFullYear();
@@ -140,7 +144,7 @@ function setNowtimeSlow(){
 }
 
 function setNowtimeFast(){  
-    var c = Math.floor(new Date().getMilliseconds() / 10).toString();
+    var c = Math.floor(newDate().getMilliseconds() / 10).toString();
     $('.centisecond').text('00'.slice(0, 2-c.length) + c);
 }
 
