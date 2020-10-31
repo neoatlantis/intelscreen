@@ -65,6 +65,13 @@ var monitors = [
     "life": 600,
 },
 
+{
+    "title": "Central Europe Lightning",
+    "url": "https://www.blitzortung.org/en/History/{yyyy}/{mm}/{dd}/{UTCHH}/{MM/10}/image_b_de.png",
+    "css": "background-image: url('https://www.blitzortung.org/en/History/Backgrounds/image_b_de.png'); background-size: 100%;",
+    "life": 600,
+},
+
 /*{
     "title": "FMI - Hankasalmi",
     "url": "http://aurora.fmi.fi/public_service/latest_SIR_AllSky.jpg",
