@@ -85,6 +85,18 @@ var monitors = [
 },
 
 {
+    "title": "KMA East Asia Analysis",
+    "url": "http://web.kma.go.kr/repositary/image/cht/img/sfc3_{UTCyyyy}{UTCmm}{UTCdd}{UTCHH/6}.png",
+    "life": 3600,
+},
+
+{
+    "title": "JMA Typhoons",
+    "url": "http://www.jma.go.jp/jp/typh/images/wide/all-00.png",
+    "life": 900,
+},
+
+{
     "title": "Weather Warning Europe",
     "url": "http://www.unwetterzentrale.de/images/map/europe_index.png",
     "life": 180,

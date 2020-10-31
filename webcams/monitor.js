@@ -50,6 +50,8 @@ function resolveUrl(url){
         .replace("{UTCHH}", rjust2(utchour))
         .replace("{UTCMM}", rjust2(utcminute))
         .replace("{UTCSS}", rjust2(utcsecond))
+
+        .replace("{UTCHH/6}", rjust2(Math.floor(utchour/6) * 6))
         .replace("{UTCMM/10}", rjust2(Math.floor(utcminute/10) * 10))
     ;
     console.log(url);
