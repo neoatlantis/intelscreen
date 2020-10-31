@@ -46,7 +46,18 @@ var monitors = [
     "life": 1800,
 },
 
-/*{
+{
+    "title": "Sun Magnetogram Colorized",
+    "url": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_512_HMIBC.jpg",
+    "life": 120,
+},
+
+{
+    "title": "Sun Intensitygram",
+    "url": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_512_HMII.jpg",
+    "life": 120,
+},
+    /*{
     "title": "FMI - Kevo",
     "city": "Kevo",
     "country": "fi",
