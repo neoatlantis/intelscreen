@@ -2,37 +2,6 @@ var imageWidth = 400, imageHeight = 300;
 var refreshInterval = 15000;
 var monitors = [
 //////////////////////////////////////////////////////////////////////////////
-/*{
-    "title": "Elbe River",
-    "city": "Dresden",
-    "country": "de",
-    "url": "http://web.dlz-it.de/ftp/wsa-dd/dresden.jpg",
-    "life": 60,
-},*/
-
-{
-    "title": "Frauenkirche #1",
-    "city": "Dresden",
-    "country": "de",
-    "url": "http://www.frauenkirche.de/webcams/img.php?12&",
-    "life": 60,
-},
-
-/*{
-    "title": "Frauenkirche #2",
-    "city": "Dresden",
-    "country": "de",
-    "url": "http://www.frauenkirche.de/webcams/img.php?22&",
-    "life": 60,
-},
-
-{
-    "title": "Frauenkirche #3",
-    "city": "Dresden",
-    "country": "de",
-    "url": "http://www.frauenkirche.de/webcams/img.php?32&",
-    "life": 60,
-},*/
 
 {
     "title": "Zwinger Palace",
