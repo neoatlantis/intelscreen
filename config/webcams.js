@@ -57,11 +57,11 @@ var monitors = [
     "url": "http://webcam.oregonstate.edu/cam/hmsc/live/live.jpg",
 },*/
 
-{
+/*{
     "title": "World AQI Index",
     "url": "http://lab.neoatlantis.org/aqimap.png",
     "life": 600,
-},
+},*/
 
 {
     "title": "Aurora Forecast",
@@ -129,11 +129,11 @@ var monitors = [
     "life": 900,
 },
 
-{
+/*{
     "title": "Himawari-8",
     "url": "http://lab.neoatlantis.org/h8color-taiwan.jpg",
     "life": 600,
-},
+},*/
 
 {
     "title": "Weather Europe Now",
