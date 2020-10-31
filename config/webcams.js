@@ -160,6 +160,12 @@ var monitors = [
 },
 
 {
+    "title": "Dresden Altstadt",
+    "url": "http://allthos.de/lions/dresden.jpg",
+    "life": 300,
+},
+
+{
     "title": "Volcano - Popocatepetel",
     "url": "http://www.cenapred.unam.mx/images/popo1.jpg",
     "life": 120,
