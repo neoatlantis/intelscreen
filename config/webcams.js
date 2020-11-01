@@ -203,7 +203,7 @@ var monitors = [
 
 {
     "title": "Twitter Trends Germany",
-    "url": "http://lab.neoatlantis.org/twitter/germany.png",
+    "url": "http://intelscreen.neoatlantis.org/twitter/germany.png",
     "life": 300,
 },
 
