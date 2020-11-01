@@ -194,5 +194,12 @@ var monitors = [
     "life": 1200,
 }*/
 
+{
+    "title": "Currency EUR-CNY 7d",
+    "url": "https://www.google.com/finance/chart?espv=2&q=CURRENCY:EURCNY&tkr=1&p=7d&chst=vkc&chs=600x400&chsc=2",
+    "life": "600",
+    "css": "filter:invert(100%);"
+},
+
 //////////////////////////////////////////////////////////////////////////////
 ];
