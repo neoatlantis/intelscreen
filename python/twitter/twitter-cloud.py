@@ -56,7 +56,7 @@ with sqlitedict.SqliteDict(database, autocommit=False) as db:
         print("--- no new download of keywords done. ---")
 
     for timestamp_float in db:
-        timestamp = float(timestamp)
+        timestamp = float(timestamp_float)
 
         for start, end in statistics:
             if start <= timestamp < end:
