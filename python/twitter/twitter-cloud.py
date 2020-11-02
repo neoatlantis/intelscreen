@@ -101,7 +101,8 @@ wc = WordCloud(
     background_color="black",
     width=config["width"],
     height=config["height"],
-    colormap="plasma"
+    colormap="plasma",
+    max_words=30
 )
 wc.generate_from_frequencies(keywords_weights)
 
