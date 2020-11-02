@@ -82,7 +82,7 @@ total = 1
 
 for start, end in statistics:
     oldness = now - 0.5 * (start+end)
-    catalog_weight = 10 * (0.1 ** (1/2.0)) ** (oldness / 86400)
+    catalog_weight = 10 * (0.1 ** (1/0.33)) ** (oldness / 86400)
 
     found = False
     for keyword in keywords_weights:
