@@ -8,7 +8,7 @@ var monitors = [
     "city": "Dresden",
     "country": "de",
     "url": "http://www.softed.de/webcam/zwinger.jpg",
-    "life": 60,
+    "life": 300,
 },
 
 /*{
@@ -49,13 +49,13 @@ var monitors = [
 {
     "title": "Sun Magnetogram Colorized",
     "url": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_512_HMIBC.jpg",
-    "life": 120,
+    "life": 180,
 },
 
 {
     "title": "Sun Intensitygram",
     "url": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_512_HMII.jpg",
-    "life": 120,
+    "life": 180,
 },
 
 {
@@ -99,7 +99,7 @@ var monitors = [
 {
     "title": "Weather Warning Europe",
     "url": "http://www.unwetterzentrale.de/images/map/europe_index.png",
-    "life": 180,
+    "life": 300,
 },
 
 {
@@ -113,7 +113,7 @@ var monitors = [
 {
     "title": "Weather Warning Germany",
     "url": "http://www.unwetterzentrale.de/images/map/deutschland_index.png",
-    "life": 180,
+    "life": 300,
 },
 
 {
@@ -161,13 +161,13 @@ var monitors = [
 {
     "title": "Dresden Altstadt",
     "url": "http://allthos.de/lions/dresden.jpg",
-    "life": 300,
+    "life": 600,
 },
 
 {
     "title": "Volcano - Popocatepetel",
     "url": "http://www.cenapred.unam.mx/images/popo1.jpg",
-    "life": 120,
+    "life": 300,
 },
 
 /*{

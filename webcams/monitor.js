@@ -66,7 +66,7 @@ function cacheGenerate(){
             .addClass('cacheimage')
             .data('url', monitors[id].url)
             .data('title', monitors[id].title)
-            .data('life', (monitors[id].life || 300) * 1000)
+            .data('life', (monitors[id].life || 600) * 1000)
             .data('nextupdate', 0)
             .appendTo('#cache')
         ;
