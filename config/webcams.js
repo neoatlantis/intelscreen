@@ -158,11 +158,13 @@ var monitors = [
     "life": 600,
 },
 
+/* // too large, dont do this.
 {
     "title": "Dresden Altstadt",
     "url": "http://allthos.de/lions/dresden.jpg",
     "life": 600,
 },
+*/
 
 {
     "title": "Volcano - Popocatepetel",
