@@ -3,28 +3,6 @@ var refreshInterval = 15000;
 var monitors = [
 //////////////////////////////////////////////////////////////////////////////
 
-{
-    "title": "Zwinger Palace",
-    "city": "Dresden",
-    "country": "de",
-    "url": "http://www.softed.de/webcam/zwinger.jpg",
-    "life": 300,
-},
-
-/*{
-    "title": "Old Faithful #1",
-    "city": "Yellowstone",
-    "country": "us",
-    "url": "http://www.nps.gov/webcams-yell/oldfaithvc.jpg",
-    "life": 60,
-},
-
-{
-    "title": "Oregon State University",
-    "city": "Corvallis",
-    "country": "us",
-    "url": "http://webcam.oregonstate.edu/cam/hmsc/live/live.jpg",
-},*/
 
 /*{
     "title": "World AQI Index",

@@ -157,10 +157,12 @@ function allocate(slotID){
     $(to + ' .title').html(title);
 }
 
-function setMonitor(){  
+function setMonitor(d){  
+    if(d == undefined) d = 1;
     if(touseSlot >= slotsCount) touseSlot = 0;
+    if(touseSlot < 0) touseSlot = slotsCount - 1;
     allocate('monitor-' + touseSlot);
-    touseSlot++;
+    touseSlot += d;
 }
 
 function rjust2(i){
@@ -245,4 +247,17 @@ $(function(){
     setInterval(setNowtimeSlow, 500);
     setNowtimeFast();
     setNowtimeSlow();
+});
+
+
+
+$(document).bind("mousewheel", function(e){
+    if(e.originalEvent.ctrlKey) return;
+    const delta = e.originalEvent.wheelDelta;
+
+    for(let i=0; i<Math.abs(delta / 120); i++){
+        setMonitor((delta > 0 ? 1 : -1));
+    }
+
+    e.preventDefault();
 });
