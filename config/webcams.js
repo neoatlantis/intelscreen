@@ -209,5 +209,11 @@ var monitors = [
     "life": 300,
 },
 
+{
+    "title": "Largest 20 Earthquakes -1d",
+    "url": "https://volcanodiscovery.de/maps/earthquakes-latest.jpg",
+    "life": 600,
+},
+
 //////////////////////////////////////////////////////////////////////////////
 ];
