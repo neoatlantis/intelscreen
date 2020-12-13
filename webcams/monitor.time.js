@@ -28,8 +28,8 @@ function getTimeDiff(){
         }
     });
 }
-setInterval(getTimeDiff, 5000);
-getTimeDiff();
+//setInterval(getTimeDiff, 5000);
+//getTimeDiff();
 
 
 
