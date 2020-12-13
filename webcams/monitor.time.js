@@ -11,8 +11,11 @@ function getTimeDiff(){
             const end_time = new Date().getTime();
             const server_time = new Date(request.getResponseHeader('Date')).getTime();
             const diff = server_time - (end_time + start_time) / 2;
+
+            console.log("measurement:", diff);
+
             measurements.push(diff);
-            if(measurements.length > 10) measurements.pop();
+            while(measurements.length > 10) measurements.pop();
 
             if(version === null){
                 version = data;
@@ -35,7 +38,9 @@ function newDate(){
     let c = 0;
     if(measurements.length > 0){
         measurements.forEach((i) => c += i);
-        return new Date(new Date().getTime() + c/measurements.length);
+        let delta = c / measurements.length;
+        console.log("Delta:", delta);
+        return new Date(new Date().getTime() + delta);
     } else {
         return new Date();
     }

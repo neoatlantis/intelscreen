@@ -43,12 +43,12 @@ var monitors = [
     "life": 600,
 },
 
-{
+/*{
     "title": "Central Europe Lightning",
     "url": "https://www.blitzortung.org/en/History/{yyyy}/{mm}/{dd}/{UTCHH}/{MM/10}/image_b_de.png",
     "css": "background-image: url('https://www.blitzortung.org/en/History/Backgrounds/image_b_de.png'); background-size: 100%;",
     "life": 600,
-},
+},*/
 
 /*{
     "title": "FMI - Hankasalmi",
@@ -94,16 +94,16 @@ var monitors = [
     "life": 300,
 },
 
-{
+/*{
     "title": "Weather Saxony",
     "url": "http://www.dwd.de/DWD/wetter/aktuell/deutschland/bilder/wx_thu_akt.jpg",
     "life": 900,
-},
+},*/
 
 {
-    "title": "Weather Hessen",
-    "url": "http://www.dwd.de/DWD/wetter/aktuell/deutschland/bilder/wx_hes_akt.jpg",
-    "life": 900,
+    "title": "Precipitation Hessen Now",
+    "url": "https://www.dwd.de/DWD/wetter/radar/rad_hes_aktbf.jpg",
+    "life": 600,
 },
 
 /*{
@@ -191,6 +191,12 @@ var monitors = [
     "title": "Largest 20 Earthquakes -1d",
     "url": "https://volcanodiscovery.de/maps/earthquakes-latest.jpg",
     "life": 600,
+},
+
+{
+    "title": "Seismic Monitor",
+    "url": "http://ds.iris.edu/seismon/views/eveday//imgs/topMap.eveday.png",
+    "life": 1200,
 },
 
 //////////////////////////////////////////////////////////////////////////////
