@@ -15,7 +15,7 @@ function getTimeDiff(){
             console.log("measurement:", diff);
 
             measurements.push(diff);
-            while(measurements.length > 10) measurements.pop();
+            while(measurements.length > 10) measurements.shift();
 
             if(version === null){
                 version = data;
@@ -39,7 +39,7 @@ function newDate(){
     if(measurements.length > 0){
         measurements.forEach((i) => c += i);
         let delta = c / measurements.length;
-        console.log("Delta:", delta);
+        console.log("Delta:", delta, "based on", measurements.length, " measurements.");
         return new Date(new Date().getTime() + delta);
     } else {
         return new Date();
