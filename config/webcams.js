@@ -25,6 +25,12 @@ var monitors = [
 },*/
 
 {
+    "title": "K-Prediction Germany",
+    "url": "https://cdn.polarlicht-vorhersage.de/kp_mid.png",
+    "life": 900,
+},
+
+{
     "title": "Space Weather Overview",
     "url": "https://services.swpc.noaa.gov/images/swx-overview-large.gif",
     "life": 900,
@@ -133,6 +139,12 @@ var monitors = [
 {
     "title": "Offenbach West DWD Camera",
     "url": "https://opendata.dwd.de/weather/webcam/Offenbach-W/Offenbach-W_latest_640.jpg",
+    "life": 600,
+},
+
+{
+    "title": "Wasserkuppe DWD Camera",
+    "url": "https://opendata.dwd.de/weather/webcam/Wasserkuppe-SW/Wasserkuppe-SW_latest_640.jpg",
     "life": 600,
 },
 
