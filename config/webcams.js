@@ -18,10 +18,16 @@ var monitors = [
     "life": 600,
 },
 
-{
+/*{
     "title": "Estimated Planetary K Index",
     "url": "http://services.swpc.noaa.gov/images/planetary-k-index.gif",
     "life": 1800,
+},*/
+
+{
+    "title": "Space Weather Overview",
+    "url": "https://services.swpc.noaa.gov/images/swx-overview-large.gif",
+    "life": 900,
 },
 
 {
@@ -62,11 +68,11 @@ var monitors = [
     "life": 900,
 },
 
-{
+/*{
     "title": "KMA East Asia Analysis",
     "url": "http://web.kma.go.kr/repositary/image/cht/img/sfc3_{UTCyyyy}{UTCmm}{UTCdd}{UTCHH/6}.png",
     "life": 600,
-},
+},*/
 
 /*{
     "title": "JMA Typhoons",
@@ -93,12 +99,6 @@ var monitors = [
     "url": "http://www.unwetterzentrale.de/images/map/deutschland_index.png",
     "life": 300,
 },
-
-/*{
-    "title": "Weather Saxony",
-    "url": "http://www.dwd.de/DWD/wetter/aktuell/deutschland/bilder/wx_thu_akt.jpg",
-    "life": 900,
-},*/
 
 {
     "title": "Precipitation Hessen Now",
