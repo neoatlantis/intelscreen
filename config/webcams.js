@@ -68,11 +68,11 @@ var monitors = [
     "life": 600,
 },
 
-{
+/*{
     "title": "JMA Typhoons",
     "url": "http://www.jma.go.jp/jp/typh/images/wide/all-00.png",
     "life": 900,
-},
+},*/
 
 {
     "title": "Weather Warning Europe",
@@ -144,11 +144,11 @@ var monitors = [
 },
 */
 
-{
+/*{
     "title": "Volcano - Popocatepetel",
     "url": "http://www.cenapred.unam.mx/images/popo1.jpg",
     "life": 300,
-},
+},*/
 
 /*{
     "title": "Switzerland Weather",
@@ -174,18 +174,18 @@ var monitors = [
     "life": 1200,
 }*/
 
-{
+/*{
     "title": "Currency EUR-CNY 7d",
     "url": "https://www.google.com/finance/chart?espv=2&q=CURRENCY:EURCNY&tkr=1&p=7d&chst=vkc&chs=600x400&chsc=2",
     "life": 600,
     "css": "filter:invert(100%);"
-},
+},*/
 
-{
+/*{
     "title": "Twitter Trends Germany",
     "url": "http://intelscreen.neoatlantis.org/twitter/germany.png",
     "life": 300,
-},
+},*/
 
 {
     "title": "Largest 20 Earthquakes -1d",
@@ -193,11 +193,11 @@ var monitors = [
     "life": 600,
 },
 
-{
+/*{
     "title": "Seismic Monitor",
     "url": "http://ds.iris.edu/seismon/views/eveday//imgs/topMap.eveday.png",
     "life": 1200,
-},
+},*/
 
 //////////////////////////////////////////////////////////////////////////////
 ];
